@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global/Universal Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  color: white;
+}
+
+/* Header Styling */
+
+.header {
+  background: radial-gradient(transparent, rgba(0, 0, 0, 1)),
+    linear-gradient(rgba(0, 0, 0, 0.65), transparent),
+    url("./images/netflix-bg.avif") no-repeat center/cover;
+}
+
+/* Tab Styling */
+
+.tabcontent {
+  background: #000;
+  width: 100%;
+}
+
+.tabs:focus .icon,
+.tabs:focus p,
+.tabs:hover .icon,
+.tabs:hover p {
+  color: white;
+}
+
+/* Home Icon Styling */

@@ -5,7 +5,7 @@ import logo from "../images/netflix-logo.png";
 const Header = () => {
   return (
     <>
-      <div className="header w-[100vw] h-[85vh] flex flex-col items-center justify-center relative p-8">
+      <div className="header w-full h-[85vh] flex flex-col items-center justify-center relative p-8">
         <img
           src={logo}
           alt="logo"

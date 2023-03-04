@@ -4,12 +4,10 @@ import Tabs from "../components/Tabs";
 
 const Home = () => {
   return (
-    <>
-      <div className="w-screen h-screen">
-        <Header />
-        <Tabs />
-      </div>
-    </>
+    <div className="w-[100vw] bg-blue-500">
+      <Header />
+      <Tabs />
+    </div>
   );
 };
 

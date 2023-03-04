@@ -10,16 +10,19 @@
 }
 
 body {
-  width: 100%;
   color: white;
 }
 
 /* Header Styling */
 
 .header {
+  width: 100%;
   background: radial-gradient(transparent, rgba(0, 0, 0, 1)),
     linear-gradient(rgba(0, 0, 0, 0.65), transparent),
-    url("./images/netflix-bg.avif") no-repeat center/cover;
+    url("./images/netflix-bg.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Tab Styling */
@@ -36,4 +39,16 @@ body {
   color: white;
 }
 
-/* Home Icon Styling */
+/* Icon styling */
+
+.icon {
+  font-size: 2rem;
+}
+
+/* Media Query styling */
+
+@media screen and (max-width: 280px) {
+  .icon {
+    font-size: 1rem;
+  }
+}

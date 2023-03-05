@@ -1,9 +1,17 @@
 import React from "react";
+import api from "../api.js";
+import Row from "../components/Row";
 
 const NetflixShow = () => {
   return (
     <div>
-      <h2>This is my Netflix page inside</h2>
+      {/* Navbar */}
+      {/* Banner */}
+      <Row
+        title="Netflix Originals"
+        fetchURL={api.fetchNetflixOriginals}
+        isLargeRow
+      />
     </div>
   );
 };

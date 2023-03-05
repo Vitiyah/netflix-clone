@@ -3,6 +3,7 @@ import { FaDoorOpen } from "@react-icons/all-files/fa/FaDoorOpen";
 import { BsPhone } from "@react-icons/all-files/bs/BsPhone";
 import { IoMdPricetags } from "@react-icons/all-files/io/IoMdPricetags";
 import { FaTimes } from "@react-icons/all-files/fa/FaTimes";
+import { FaCheck } from "@react-icons/all-files/fa/FaCheck";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -123,7 +124,7 @@ const Tabs = () => {
           </div>
         </div>
         <div className="tabcontent" hidden={index !== 3}>
-          <div className="content-1 w-full h-[40rem] p-8 flex flex-col items-center justify-around gap-16">
+          <div className="content-1 w-full h-full p-8 flex flex-col items-center justify-around gap-16">
             <div className="w-[90%] h-[20%] flex flex-col items-center text-center">
               <h1 className="text-2xl">
                 Choose one plan and watch everything on Netflix
@@ -137,28 +138,110 @@ const Tabs = () => {
             </div>
             <div className="w-[70%] h-full flex flex-col justify-start gap-4">
               <table className="w-[30%]">
-                <tr className="h-4 text-center uppercase">
-                  <th>Basic</th>
-                  <th>Standard</th>
-                  <th>Premium</th>
+                <tr className="h-4 text-center uppercase max-sm:text-sm">
+                  <th className="p-1">Basic</th>
+                  <th className="p-1">Standard</th>
+                  <th className="p-1">Premium</th>
                 </tr>
               </table>
               <table>
-                <tr className="w-full h-12 text-gray-400 bg-zinc-800">
+                {/* First row */}
+                <tr className="w-full h-4 text-gray-400 bg-zinc-800 max-sm:text-xs max-md:text-sm">
                   <td className="w-[70%] p-4">
                     Monthly price after free month ends on 6/19/2021
                   </td>
-                  <td className="w-[10%] text-center">$6.99</td>
-                  <td className="w-[10%] text-center">$11.99</td>
-                  <td className="w-[10%] text-center">$15.99</td>
+                  <td className="w-[10%] text-center p-4">$6.99</td>
+                  <td className="w-[10%] text-center p-4">$11.99</td>
+                  <td className="w-[10%] text-center p-4">$15.99</td>
                 </tr>
-                <tr className="w-full h-12 text-gray-400">
+                {/* Second row */}
+                <tr className="w-full h-4 text-gray-400 max-sm:text-xs max-md:text-sm">
                   <td className="w-[70%] p-4">HD Available</td>
-                  <td className="w-[10%] text-center bg-blue-500">
-                    <FaTimes className="text-center" />
+                  <td className="w-[10%] p-4">
+                    <FaTimes className="m-auto" />
                   </td>
-                  <td className="w-[10%] text-center">/</td>
-                  <td className="w-[10%] text-center">/</td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                </tr>
+                {/* Third row */}
+                <tr className="w-full h-4 text-gray-400 bg-zinc-800 max-sm:text-xs max-md:text-sm">
+                  <td className="w-[70%] p-4">Ultra HD Available</td>
+                  <td className="w-[10%] p-4">
+                    <FaTimes className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaTimes className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                </tr>
+                {/* Fourth row */}
+                <tr className="w-full h-4 text-gray-400 max-sm:text-xs max-md:text-sm">
+                  <td className="w-[70%] p-4">
+                    Screens you can watch on at the same time
+                  </td>
+                  <td className="w-[10%] text-center p-4">1</td>
+                  <td className="w-[10%] text-center p-4">2</td>
+                  <td className="w-[10%] text-center p-4">4</td>
+                </tr>
+                {/* Fifth row */}
+                <tr className="w-full h-4 text-gray-400 bg-zinc-800 max-sm:text-xs max-md:text-sm">
+                  <td className="w-[70%] p-4">
+                    Watch on your laptop, TV, phone and tablet
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                </tr>
+                {/* Sixth row */}
+                <tr className="w-full h-4 text-gray-400 max-sm:text-xs max-md:text-sm">
+                  <td className="w-[70%] p-4">Unlimited movies and TV shows</td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                </tr>
+                {/* Seventh row */}
+                <tr className="w-full h-4 text-gray-400 bg-zinc-800 max-sm:text-xs max-md:text-sm">
+                  <td className="w-[70%] p-4">Cancel anytime</td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%]">
+                    <FaCheck className="m-auto" />
+                  </td>
+                </tr>
+                {/* Eighth row */}
+                <tr className="w-full h-4 text-gray-400 max-sm:text-xs max-md:text-sm">
+                  <td className="w-[70%] p-4">First month free</td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
+                  <td className="w-[10%] p-4">
+                    <FaCheck className="m-auto" />
+                  </td>
                 </tr>
               </table>
             </div>

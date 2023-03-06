@@ -1,17 +1,17 @@
 import React from "react";
 import api from "../api.js";
-import Row from "../components/Row";
+import Footer from "../components/Footer.jsx";
+import Row from "../components/Row.jsx";
+import Banner from "../components/Banner.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 const NetflixShow = () => {
   return (
-    <div>
-      {/* Navbar */}
-      {/* Banner */}
-      <Row
-        title="Netflix Originals"
-        fetchURL={api.fetchNetflixOriginals}
-        isLargeRow
-      />
+    <div className="bg-zinc w-screen h-screen">
+      <Banner />
+      <Navbar />
+      <Row title="Netflix Originals" fetchURL={api.fetchNetflixOriginals} />
+      <Footer />
     </div>
   );
 };

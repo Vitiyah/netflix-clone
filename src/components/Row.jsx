@@ -3,7 +3,7 @@ import axios from "axios";
 
 const base_url = "https://image.tmdb.org/t/p/original";
 
-const Row = ({ title, fetchURL, isLargeRow }) => {
+const Row = ({ title, fetchURL }) => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
@@ -15,7 +15,6 @@ const Row = ({ title, fetchURL, isLargeRow }) => {
     };
     fetchData();
   }, []);
-  console.log(movies);
   return (
     <div>
       <div></div>

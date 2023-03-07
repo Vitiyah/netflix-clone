@@ -25,14 +25,14 @@ const Banner = () => {
   };
   return (
     <div>
-      <div className="w-full h-[36rem] relative">
+      <div className="w-full h-[36rem] flex items-center relative">
         <img
           src={`${url}${movie?.backdrop_path}`}
           alt={`${movie?.title}`}
           className="w-full h-full bg-no-repeat bg-center bg-contain"
         />
-        <div className="overlay w-full h-full absolute top-0 left-0"></div>
-        <div className="w-[30%] h-[50%] absolute top-[50%] translate-y-[-50%] p-8 flex flex-col justify-center gap-8">
+        <div className="overlay w-full h-full absolute top-0"></div>
+        <div className="absolute top-[50%] translate-y-[-50%] w-[30%] h-[50%] p-8 flex flex-col justify-center gap-8">
           <h1 className="text-[3rem] font-extrabold">
             {movie?.title || movie?.name || movie?.originam_name}
           </h1>

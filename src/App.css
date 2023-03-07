@@ -47,10 +47,27 @@ body {
   font-size: 2rem;
 }
 
+.icon-direction {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.icon-direction:hover {
+  opacity: 100%;
+}
+
 /* Overlay styling */
 
 .overlay {
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.2));
+}
+
+.overlay-text {
+  visibility: hidden;
+}
+
+.box:hover .overlay-text {
+  visibility: visible;
 }
 
 /* Media Query styling */

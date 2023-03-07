@@ -32,7 +32,7 @@ const Banner = () => {
           className="w-full h-full bg-no-repeat bg-center bg-contain"
         />
         <div className="overlay w-full h-full absolute top-0"></div>
-        <div className="absolute top-[50%] translate-y-[-50%] w-[30%] h-[50%] p-8 flex flex-col justify-center gap-8">
+        <div className="absolute top-[50%] translate-y-[-50%] w-[30%] h-[50%] p-8 flex flex-col justify-center gap-8 max-md:w-[90%] max-lg:w-[80%]">
           <h1 className="text-[3rem] font-extrabold">
             {movie?.title || movie?.name || movie?.originam_name}
           </h1>
